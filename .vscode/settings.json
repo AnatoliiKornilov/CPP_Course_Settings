@@ -1,0 +1,19 @@
+{
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+
+  "C_Cpp.clang_format_style": "file",
+
+  "clangd.arguments": ["--clang-tidy"],
+
+  "clang-tidy.fixOnSave": false,
+  "clang-tidy.buildPath": ".",
+  "clang-tidy.config": ".clang-tidy"
+}
