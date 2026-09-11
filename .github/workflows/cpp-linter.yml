@@ -29,6 +29,7 @@ jobs:
           files-changed-only: true
           step-summary: true
           verbosity: 'debug'
+          format-review: true
 
       - name: Fail if checks failed
         if: steps.linter.outputs.checks-failed > 0
