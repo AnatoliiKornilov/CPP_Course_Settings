@@ -27,6 +27,8 @@ jobs:
           extra-args: '-std=c++23'
           thread-comments: ${{ github.event_name == 'pull_request' && 'update' }}
           files-changed-only: true
+          step-summary: true
+          verbosity: 'debug'
 
       - name: Fail if checks failed
         if: steps.linter.outputs.checks-failed > 0
