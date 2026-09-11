@@ -24,6 +24,7 @@ jobs:
         with:
           style: 'file'
           tidy-checks: ''
+          extra-args: '-std=c++23'
           thread-comments: ${{ github.event_name == 'pull_request' && 'update' }}
           files-changed-only: true
 
